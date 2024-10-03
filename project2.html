@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <form id="survey-form">
+            <h1>Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+            
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone number</label>
+                <input type="tel" name="phone_number" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <input type="radio" name="gender" value="F" required> Female
+                <input type="radio" name="gender" value="M" required> Male
+            </div>
+
+            <div class="form-group">
+                <label>Which option best describes your current role?</label>
+                <select name="role" id="drop" required>
+                    <option value="" disabled selected>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="job">Job</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label>What are your interested languages?</label>
+                <br>
+                <input type="checkbox" name="language" value="c"> C
+                <input type="checkbox" name="language" value="java"> Java
+                <input type="checkbox" name="language" value="python"> Python
+                <input type="checkbox" name="language" value="c#"> C#
+            </div>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </body>
+</html>
